@@ -1,0 +1,19 @@
+<div class="detail">
+<a href="/">back</a>
+<img  src="/assets/image/<%= @count.image %>">
+	<form action="/counts_detail/<%= @count.id %>/add" method="post">
+			  	<input class="plus" type="submit" value="+">
+		   	</form>
+<div class="moji title">
+					<%= @count.name %>
+				</div>
+				<div class="moji number">
+					<%= @count.number %>
+				</div>
+		  	<div class="moji time">
+			 		<%= @count.created_at %>
+ 	 	  	</div>
+ 		  	<div class="moji username">
+			  	<%= @name %>
+		  	</div>
+</div>

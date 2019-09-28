@@ -1,0 +1,38 @@
+<div class="all2">
+	<a class="new" href="/new">CREATE NEW COUNT</a>
+	<%# <div class="row">
+		<div class="col-lg-3">
+		</div> %>
+		<div class="boxes">
+			<div class="box">
+				<% @counts.each do |count| %>
+
+				<div class="set">
+				<a href="/counts/<%= count.id %>">
+		  	<img  src="/assets/image/<%= count.image %>"width="200px" height="200px">
+				</a>
+		  	<form action="/counts/<%= count.id %>/add" method="post">
+			  	<input class="plus" type="submit" value="+">
+		   	</form>
+
+				<div class="moji title">
+					<%= count.name %>
+				</div>
+				<div class="moji number">
+					<%= count.number %>
+				</div>
+		  	<div class="moji time">
+			 		<%= count.created_at %>
+ 	 	  	</div>
+ 		  	<div class="moji username">
+			  	<%= @name %>
+		  	</div>
+
+				</div>
+	    	<% end %>
+		  </div>
+	  </div>
+		<%# <div class="col-lg-3">
+		</div>
+	</div> %>
+</div>
