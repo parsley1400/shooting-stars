@@ -1,10 +1,11 @@
 <div class="detail">
 <a href="/">back</a>
-<img  src="/assets/image/<%= @count.image %>">
+
+<img class="deimg"  src="/assets/image/<%= @count.image %>">
 	<form action="/counts_detail/<%= @count.id %>/add" method="post">
 			  	<input class="plus" type="submit" value="+">
 		   	</form>
-<div class="moji title">
+        <div class="moji title">
 					<%= @count.name %>
 				</div>
 				<div class="moji number">
@@ -16,4 +17,15 @@
  		  	<div class="moji username">
 			  	<%= @name %>
 		  	</div>
+
+        <div class="createuser">
+        <% if @countusers %>
+        <% @users.each do |user| %>
+        <img class="userimage" src="/assets/image/<%= user.image %>">
+        <div class="name">
+  	      <%= user.username %>
+        </div>
+        <% end %>
+        <% end %>
+        </div>
 </div>

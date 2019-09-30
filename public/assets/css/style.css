@@ -150,13 +150,13 @@ img{
   font-size:20px;
 }
 
-.all2 .moji{
+.moji{
   color:#fff;
   position:absolute;
   z-index:2;
 }
 
-.all2 .title{
+.title{
   font-size:20px;
   font-weight:600;
   top:20px;
@@ -165,7 +165,7 @@ img{
   margin:auto;
 }
 
-.all2 .number{
+.number{
   font-size:100px;
   font-weight:500;
   top:30px;
@@ -174,13 +174,13 @@ img{
   margin:auto;
 }
 
-.all2 .time{
+.time{
   bottom:45px;
   right:5px;
   font-size:10px;
 }
 
-.all2 .username{
+.username{
   bottom:60px;
   right:5px;
   font-size:10px;
@@ -210,7 +210,7 @@ img{
   position:relative;
 }
 
-.detail img{
+.deimg{
   width:100%;
   margin:0;
   padding:0;
@@ -272,4 +272,18 @@ img{
   background-color:#7a7675;
   text-decoration:none;
   color:#fff;
+}
+
+.createuser{
+  position:absolute;
+}
+
+.createuser .userimage{
+  border-radius:50%;
+  width:100px;
+  height:100px;
+}
+
+.createuser .name{
+  font-size:25px;
 }

@@ -70,11 +70,15 @@ end
 get '/user/:id' do
   @image = current_user.image
   @name = current_user.username
+  @counts = Count.all
+  @usercounts = UserCount.where(user_id_id: session[:user])
   erb :user
 end
 
 get '/counts/:id' do
   @count = Count.find(params[:id])
+  @users = User.all
+  @countusers = UserCount.where(count_id_id:params[:id])
   erb :detail
 end
 
